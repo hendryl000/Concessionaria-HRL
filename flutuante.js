@@ -19,7 +19,7 @@
       }
 
       if (nomeCarro === 'Civic') {
-        conteudoFlutuante += '<img src="civic.png" alt="Civic">';
+        conteudoFlutuante += '<img src="Civic.png" alt="Civic">';
         conteudoFlutuante += '<h3>Civic</h3>';
         conteudoFlutuante += '<p>O Civic G10, também conhecido como Honda Civic 10ª geração, é um sedan compacto produzido pela montadora japonesa Honda. Aqui estão algumas especificações resumidas sobre o Honda Civic G10:</p>';
         conteudoFlutuante += '<p>Motor: O Civic G10 está disponível com diferentes opções de motor, dependendo do mercado. As opções de motor podem incluir motores a gasolina e motores a diesel, com potência variando de acordo com a versão. Além disso, algumas versões podem oferecer tecnologia de eficiência de combustível, como o sistema de economia de combustível Earth Dreams da Honda.</p>';        
