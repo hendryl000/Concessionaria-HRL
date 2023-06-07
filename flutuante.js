@@ -4,7 +4,7 @@
       var conteudoFlutuante = '';
 
       if (nomeCarro === 'Supra') {
-        conteudoFlutuante += '<img src="fotos/supra.png" alt="Supra">';
+        conteudoFlutuante += '<img src="supra.png" alt="Supra">';
         conteudoFlutuante += '<h3>Supra</h3>';
         conteudoFlutuante += '<p>O Toyota Supra é um icônico carro esportivo fabricado pela montadora japonesa Toyota. Ele é conhecido por seu desempenho excepcional e estilo marcante. Aqui estão algumas especificações gerais sobre o Toyota Supra:</p>'
         conteudoFlutuante += '<p>Motor: O Supra atual (a partir do relato do conhecimento até 2021) é equipado com um motor 3.0 litros turboalimentado de seis cilindros em linha. Essa configuração de motor fornece um alto nível de potência e torque. A potência pode variar de cerca de 335 a 382 cavalos de potência (hp), dependendo da versão e da configuração do motor.</p>'
@@ -19,7 +19,7 @@
       }
 
       if (nomeCarro === 'Civic') {
-        conteudoFlutuante += '<img src="fotos/civic.png" alt="Civic">';
+        conteudoFlutuante += '<img src="civic.png" alt="Civic">';
         conteudoFlutuante += '<h3>Civic</h3>';
         conteudoFlutuante += '<p>O Civic G10, também conhecido como Honda Civic 10ª geração, é um sedan compacto produzido pela montadora japonesa Honda. Aqui estão algumas especificações resumidas sobre o Honda Civic G10:</p>';
         conteudoFlutuante += '<p>Motor: O Civic G10 está disponível com diferentes opções de motor, dependendo do mercado. As opções de motor podem incluir motores a gasolina e motores a diesel, com potência variando de acordo com a versão. Além disso, algumas versões podem oferecer tecnologia de eficiência de combustível, como o sistema de economia de combustível Earth Dreams da Honda.</p>';        
@@ -35,7 +35,7 @@
       }
 
       if (nomeCarro === 'BMW X6') {
-        conteudoFlutuante += '<img src="fotos/bmwx6.png" alt="Civic">';
+        conteudoFlutuante += '<img src="bmwx6.png" alt="Civic">';
         conteudoFlutuante += '<h3>BMW</h3>';
         conteudoFlutuante += '<p>A BMW X6 é um veículo utilitário esportivo (SUV) de luxo fabricado pela montadora alemã BMW. Aqui estão algumas especificações gerais sobre a BMW X6:</p>';
         conteudoFlutuante +='<p>Motor: A BMW X6 está disponível em várias opções de motorização, dependendo do ano e da versão do veículo. As opções de motores podem variar de um modelo para outro, mas geralmente incluem motores a gasolina e motores a diesel. A potência pode variar de cerca de 300 cavalos de potência (hp) a mais de 600 hp nas versões de alto desempenho.</p>';      
@@ -51,7 +51,7 @@
       }
 
       if (nomeCarro === 'Kombi VW') {
-        conteudoFlutuante += '<img src="fotos/Kombi.png" alt="Kombi">';
+        conteudoFlutuante += '<img src="Kombi.png" alt="Kombi">';
         conteudoFlutuante += '<h3>Kombi</h3>';
         conteudoFlutuante += '<p></p>';
         conteudoFlutuante += '<p>A Kombi é um icônico veículo utilitário fabricado pela montadora alemã Volkswagen. Embora a produção da Kombi tenha sido encerrada em 2013, ela é muito conhecida e ainda é amplamente utilizada em várias partes do mundo. Aqui estão algumas especificações resumidas da Kombi:</p>'
@@ -67,7 +67,7 @@
       }
       
       if (nomeCarro === 'Up Tsi') {
-        conteudoFlutuante += '<img src="fotos/uptsi.png" alt="Up Tsi">';
+        conteudoFlutuante += '<img src="uptsi.png" alt="Up Tsi">';
         conteudoFlutuante += '<h3>Up Tsi</h3>';
         conteudoFlutuante += '<p>O Volkswagen Up! TSI é um carro compacto fabricado pela montadora alemã Volkswagen. Ele se destaca por seu tamanho compacto, eficiência de combustível e desempenho. Aqui estão algumas especificações sobre o Volkswagen Up! TSI:</p>';
         conteudoFlutuante += '<p>Motor: O Up! TSI é equipado com um motor 1.0 litro turboalimentado de três cilindros. Esse motor oferece boa potência em relação ao tamanho, com potência variando geralmente entre 95 a 115 cavalos de potência (hp), dependendo da versão e do ajuste do motor.</p>'
@@ -82,7 +82,7 @@
       }
       
       if (nomeCarro === 'Punto T Jet') {
-        conteudoFlutuante += '<img src="fotos/punto t jet.png" alt="Punto T Jet">';
+        conteudoFlutuante += '<img src="punto t jet.png" alt="Punto T Jet">';
         conteudoFlutuante += '<h3>Punto T Jet</h3>';
         conteudoFlutuante += '<p>Motor: O Punto T-Jet é equipado com um motor 1.4 litro turboalimentado de quatro cilindros. Esse motor oferece um desempenho mais esportivo em comparação com as versões convencionais do Punto, com potência geralmente variando entre 120 a 155 cavalos de potência (hp), dependendo da versão e do ajuste do motor.</p>'
         conteudoFlutuante += '<p>Transmissão: O Punto T-Jet geralmente vem com uma transmissão manual de seis velocidades. Além disso, algumas versões podem oferecer uma opção de transmissão automatizada de embreagem única (Dualogic) ou uma transmissão automática.</p>'
