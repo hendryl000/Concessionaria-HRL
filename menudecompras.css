@@ -1,0 +1,38 @@
+/* Menu de compra de carros */
+.car-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .car-list li {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .car-list img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .car-list h3 {
+    margin-top: 0;
+  }
+  
+  .car-list p {
+    margin-bottom: 10px;
+  }
+  
+  .car-list button {
+    background-color: #BF0404;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

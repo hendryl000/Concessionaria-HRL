@@ -1,0 +1,13 @@
+.mapa{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: -290px;
+    left: 75%;
+    
+  }
+.icon{
+    width: 24px;
+    height: 24px;
+    
+  }

@@ -1,0 +1,24 @@
+#marcaContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .marcaButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    background-color: #ED7A40;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .marcaButton:hover {
+    background-color: #e7611e;
+  }
+  
+  h2, h3 {
+    text-align: center;
+  }

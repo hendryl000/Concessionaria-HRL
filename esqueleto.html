@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Concessionária HRL</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="comprar.css">
+  <link rel="stylesheet" type="text/css" href="menuescolha.css">
+  <link rel="stylesheet" type="text/css" href="vermais.css">
+  <link rel="stylesheet" type="text/css" href="outros.css">
+  <link rel="stylesheet" type="text/css" href="checkout.css">
+</head>
+<body>
+  
+  <header class="header-content">
+    <h1 id="Home">HRLC</h1>
+    <button id="menuButton">Menu</button>
+  </header>
+  
+  <nav id="menuNav">
+    <ul>
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#Novos">Carros Novos</a></li>
+      <li><a href="#Usados">Carros Usados</a></li>
+      <li><a href="#Contatos">Contato</a></li>
+    </ul>
+  </nav>
+
+  <h2>Escolha a sua Marca Favorita:</h2>
+  <div class="marca-container" id="marcaContainer">
+    <button class="marcaButton" data-marca="Todos">Todos</button>
+    <button class="marcaButton" data-marca="Toyota">Toyota</button>
+    <button class="marcaButton" data-marca="Honda">Honda</button>
+    <button class="marcaButton" data-marca="BMW">BMW</button>
+    <button class="marcaButton" data-marca="Volkswagen">Volkswagen</button>
+    <button class="marcaButton" data-marca="Fiat">Fiat</button>
+  </div>
+
+  <div id="informacoesFlutuantes" class="modal">
+    <div class="modal-content">
+      <span  class="close" onclick="fecharInformacoes(), fecharCheckout()">&times;</span>
+      <div id="informacoesCarro"></div><br>
+
+      <div id="checkoutForm" class="container" style="display: none;">
+        <h1>Checkout</h1>
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome">
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf">
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade">
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep">
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco">
+        <label for="email">E-mail:</label>
+        <input type="text" id="email">
+        <button onclick="processarCheckout()">Finalizar Compra</button>
+        <button class="cancel-button" onclick="fecharCheckout()">Cancelar</button>
+        <div id="confirmationMessage" class="confirmation-message" style="display: none;"></div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <h2 id="Novos">Carros Novos</h2>
+    <ul class="car-list">
+      <li data-marca="Toyota">
+        <img src="fotos/supra.png" alt="Supra">
+        <h3>Supra</h3>
+        <p>O Toyota Supra é um icônico carro esportivo fabricado pela montadora japonesa Toyota. Ele é conhecido por seu desempenho excepcional e estilo marcante. Aqui estão algumas especif...</p>
+        <p>Preço: R$ 1.300.000,00</p>
+        
+        <button onclick="exibirInformacoes('Supra')">Ver Mais</button>
+      </li>
+
+      <li data-marca="Honda">
+        <img src="fotos/Civic.png" alt="Civic">
+        <h3>Civic</h3>
+        <p>O Civic G10, também conhecido como Honda Civic 10ª geração, é um sedan compacto produzido pela montadora japonesa Honda. Aqui estão algumas especificações resumidas sobr...</p>
+        <p>Preço: R$ 675.900</p>
+        
+        <button onclick="exibirInformacoes('Civic')">Ver Mais</button>
+      </li>
+
+      <li data-marca="BMW">
+        <img src="fotos/bmwx6.png" alt="BMW X6">
+        <h3>BMW X6</h3>
+        <p>A BMW X6 é um veículo utilitário esportivo (SUV) de luxo fabricado pela montadora alemã BMW. Aqui estão algumas especificações ger...</p>
+        <p>Preço: R$ 744 950,00</p>
+        
+        <button onclick="exibirInformacoes('BMW X6')">Ver Mais</button>
+      </li>
+    </ul>
+
+    <h2 id="Usados">Carros Usados</h2>
+    <ul class="car-list">
+      <li data-marca="Volkswagen">
+        <img src="fotos/Kombi.png" alt="Kombi">
+        <h3>Kombi VW</h3>
+        <p>A Kombi é um icônico veículo utilitário fabricado pela montadora alemã Volkswagen. Embora a produção da Kombi tenha sido encerrada em 2013, ela é muito conhecida e ainda é amplamente utilizada em várias partes do mundo. Aqui estão alg...:</p>
+        <p>Preço: R$ 9.500,00</p>
+        
+        <button onclick="exibirInformacoes('Kombi VW')">Ver Mais</button>
+      </li>
+
+      <li data-marca="Volkswagen">
+        <img src="fotos/uptsi.png" alt="Up Tsi">
+        <h3>Up Tsi</h3>
+        <p>O Volkswagen Up! TSI é um carro compacto fabricado pela montadora alemã Volkswagen. Ele se destaca por seu tamanho compacto, eficiência de combustível e desempenho. Aqui estão algumas especificações sobre o Volkswa...:</p>
+        <p>Preço: R$ 39.999,00</p>
+        
+        <button onclick="exibirInformacoes('Up Tsi')">Ver Mais</button>
+      </li>
+
+      <li data-marca="Fiat">
+        <img src="fotos/punto t jet.png" alt="Puntotjet">
+        <h3>Punto T Jet</h3>
+        <p>O Fiat Punto T-Jet é uma versão esportiva do hatchback compacto Fiat Punto. Ele se destaca por seu desempenho aprimorado e estilo esportivo. Aqui estão algumas especificações sobre o Fiat Pu...</p>
+        <p>Preço: R$ 44.990,00</p>
+        
+        <button onclick="exibirInformacoes('Punto T Jet')">Ver Mais</button>
+      </li>
+    </ul>
+  </main>
+  
+  
+  <footer id="Contatos">
+    <hr> 
+    <h3>Contatos</h3>
+    
+    <a href="https://www.whatsapp.com/?lang=pt_br" style="text-decoration: none;">
+      <img src="Icons/whatsapp.png" class="icon" alt="WhatsApp">
+    </a>
+    <a href="https://github.com/hendryl000" style="text-decoration: none;">
+      <img src="Icons/github.png" class="icon" alt="Github">
+    </a>
+    <a href="https://www.instagram.com/zhendryl/" style="text-decoration: none;">
+      <img src="Icons/instagram.png" class="icon" alt="Instagram">
+    </a>
+    <a href="https://pt-br.facebook.com/" style="text-decoration: none;">
+      <img src="Icons/facebook.png" class="icon" alt="Facebook">
+    </a>
+    <a href="https://br.search.yahoo.com/?fr2=p:fprd,mkt:br" style="text-decoration: none;">
+      <img src="Icons/envelope.png" class="icon" alt="e-mail">
+    </a>
+    <a href="#Home" style="text-decoration: none;">
+      <img src="Icons/casa.png" class="icon" alt="Casa">
+    </a>
+
+    <nav>
+      <p>Rua: Av. Roberto Silveira, 437 - Centro, Maricá - RJ, 24900-440</p>
+    </nav>
+    <nav>
+      <p>A segurança é a nossa prioridade número um.</p>
+    </nav>
+    <nav>
+      <p>Lembre-se, a segurança é a chave para a tranquilidade online.</p>
+    </nav>
+    <nav>
+      <img src="fotos/selos.png">
+    </nav>
+    <nav class="mapa">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.8978919301726!2d-42.81557502452469!3d-22.917136738241304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99ed97a377eccf%3A0x47e3b1c66d2180dc!2sUniversidade%20de%20Vassouras%20-%20Campus%20Maric%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1684192568019!5m2!1spt-BR!2sbr"></iframe>
+    </nav>
+    <hr> 
+    <p>&copy; 2023 - Hendryl Alves. Todos os direitos reservados.</p>
+  </footer>
+  <script src="menu.js"></script>
+  <script src="flutuante.js"></script>
+  <script src="checkout.js"></script>
+  <script src="marcas.js"></script>
+</body>
+</html>
